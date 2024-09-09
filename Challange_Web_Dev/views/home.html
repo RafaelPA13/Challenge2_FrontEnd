@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,15 +25,20 @@
   <body>
     <div class="container">
       <div class="bg">
-        <header class="header-page">
-          <div class="logo-home">
-            <img src="../img/Web/Logo-Formula-E.png" alt="Logo" />
-          </div>
-          <nav>
-            <ul>
+        <header class="header">
+            <a href="./home.html"><img class="logo" src="../img/Web/Logo-Formula-E.png" alt="logo" /></a>
+          <nav id="nav">
+            <button id="btn-mobile">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="menu-header">
               <li><a href="./wiki.html">Wiki</a></li>
               <li><a href="./classificacao.html">Classificação</a></li>
               <li><a href="./jogo.html">Jogos</a></li>
+              <li class="buttons">
+                <a href="./login.html" class="button button-red">Entrar</a>
+                <a class="button button-dark">Cadastrar</a>
+              </li>
             </ul>
           </nav>
         </header>
@@ -63,7 +70,9 @@
             </div>
 
             <div>
-              <a href="./wiki.html" class="link button button-light">Saiba mais</a>
+              <a href="./wiki.html" class="link button button-light"
+                >Saiba mais</a
+              >
             </div>
           </div>
           <div class="image-container">
