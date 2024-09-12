@@ -1,53 +1,9 @@
-h2 {
-  font-style: italic;
-}
+/* História da fórmula E */
 
-.section-container {
-    font-family: var(--font-primary);
-    margin: auto;
-    width: 100%;
-    margin: 3rem 0 10rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .bg {
-    background-image: url(../img/Web/Banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 40%;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-primary);
-  }
-  
-  .content {
-    width: 48%;
-    padding: 0 10px 0 30px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
 
-    .title-container, h2 {
-        font-size: 40px;
-    }
-  
-    .text-container {
-      padding: 40px 0 40px;
-  
-      p {
-        width: 90%;
-        color: var(--font-primary-color);
-      }
-    }
-  }
+
+/* Fim História da fórmula E */
+
 
 /* Circuitos */
 .circuit-container {
@@ -61,6 +17,8 @@ h2 {
     font-size: 2rem;
   }
 }
+
+/* Fim Circuitos */
 
 /* Equipes */
 .teams-accordion {
