@@ -1,6 +1,45 @@
 /* História da fórmula E */
 
+.container {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: var(--font-primary);
+}
 
+.content {
+  padding: 4rem;
+  color: var(--font-primary-color);
+  font-size: 1.2rem;
+  font-weight: 200;
+  border-radius: 0 0 50px 0;
+}
+
+#blue {
+  background-color: var(--font-primary-dark-color);
+  z-index: 2;
+}
+
+#red {
+  background-color: #D5001C;
+  z-index: 1;
+  margin-left: -3rem;
+}
+
+#light-blue {
+  background-color: #0500FF;
+  z-index: 0;
+  margin-left: -3rem;
+}
+
+.title-container {
+  margin-bottom: 1rem;
+
+  h2 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}
 
 /* Fim História da fórmula E */
 
@@ -25,8 +64,8 @@
   width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  margin: 0 auto; 
+  align-items: center;
+  margin: 0 auto;
 
   .teams-content-box {
     margin: 1rem 2rem;
@@ -67,7 +106,7 @@
 
   .label-content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     background: var(--bg-primary);
     color: var(--font-primary-color);
     overflow: hidden;
@@ -84,88 +123,91 @@
     }
   }
 
- 
-  .label.active + .label-content {
+
+  .label.active+.label-content {
     height: auto;
     padding: 1rem;
   }
 
   .label:hover {
-    background-color: #d6d5d5c5;;
+    background-color: #d6d5d5c5;
+    ;
   }
 }
 
 
-  /* Mobile */
+/* Mobile */
 @media only screen and (max-width: 1200px) {
-    .section-container {
-      height: auto;
-      margin-bottom: 2rem;
-      
-    }
-    .content-wrapper {
-      height: 100%;
-      flex-direction: column-reverse;
-      padding: 1rem 0 1rem;
-      align-items: start;
-    }
-  
-    .content {
-      margin-top: 15px;
-      width: 100%;
-    }
-  
-    .image-container {
-      width: 100%;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 0;
-      flex-grow: 0;
-      margin-top: 2rem;
-      img {
-        width: 90%;
-        height: fit-content;
-        object-fit: contain;
-      }
-    }
-  
-    .piloto-wrapper {
-      top: 0 !important;
-    }
+  .section-container {
+    height: auto;
+    margin-bottom: 2rem;
 
-    .circuit-container {
-      p {
-        padding: 2rem;
-        color: var(--color-tertiary);
-        font-size: 1rem;
-      }
-    }
+  }
 
-    .teams-accordion {
-      width: 100%;
-    }
+  .content-wrapper {
+    height: 100%;
+    flex-direction: column-reverse;
+    padding: 1rem 0 1rem;
+    align-items: start;
+  }
 
-    .label {
-      gap: 10px !important; 
-      padding: 1rem !important;
-  
-      img {
-        height: 30px !important;
-      }
-  
-      .title-label {
-        font-size: .8rem !important;
-      }
+  .content {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    flex-grow: 0;
+    margin-top: 2rem;
+
+    img {
+      width: 90%;
+      height: fit-content;
+      object-fit: contain;
     }
-  
-    .label::before {
-      font-weight: 200;
-      right: 1px;
+  }
+
+  .piloto-wrapper {
+    top: 0 !important;
+  }
+
+  .circuit-container {
+    p {
+      padding: 2rem;
+      color: var(--color-tertiary);
       font-size: 1rem;
     }
+  }
 
-    .label-content {
-      margin-bottom: 2rem;
-      font-size: .9rem !important;
+  .teams-accordion {
+    width: 100%;
+  }
+
+  .label {
+    gap: 10px !important;
+    padding: 1rem !important;
+
+    img {
+      height: 30px !important;
     }
+
+    .title-label {
+      font-size: .8rem !important;
+    }
+  }
+
+  .label::before {
+    font-weight: 200;
+    right: 1px;
+    font-size: 1rem;
+  }
+
+  .label-content {
+    margin-bottom: 2rem;
+    font-size: .9rem !important;
+  }
 }
