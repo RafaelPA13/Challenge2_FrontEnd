@@ -23,13 +23,19 @@
 #red {
   background-color: #D5001C;
   z-index: 1;
-  margin-left: -3rem;
 }
 
 #light-blue {
   background-color: #0500FF;
   z-index: 0;
+}
+
+#red, #light-blue {
   margin-left: -3rem;
+
+  h2, p {
+    margin-left: 1rem;
+  }
 }
 
 .title-container {
@@ -135,46 +141,48 @@
   }
 }
 
+/* Fim Equipes */
+
 
 /* Mobile */
 @media only screen and (max-width: 1200px) {
-  .section-container {
-    height: auto;
-    margin-bottom: 2rem;
 
-  }
-
-  .content-wrapper {
-    height: 100%;
-    flex-direction: column-reverse;
-    padding: 1rem 0 1rem;
-    align-items: start;
+  /* História da fórmula E */
+  .container {
+    grid-template-columns: 1fr;
   }
 
   .content {
-    margin-top: 15px;
-    width: 100%;
+    padding: 3rem;
+
   }
 
-  .image-container {
-    width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0;
-    flex-grow: 0;
-    margin-top: 2rem;
+  #red, #light-blue {
+    margin-left: 0;
+    margin-top: -2.5rem;
 
-    img {
-      width: 90%;
-      height: fit-content;
-      object-fit: contain;
+    h2 {
+      margin-top: 2rem;
+    }
+
+    h2, p {
+      margin-left: 0;
     }
   }
 
-  .piloto-wrapper {
-    top: 0 !important;
+  .title-container {
+    margin-bottom: 1rem;
+
+    h2 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
   }
 
+  /* Fim História da fórmula E */
+
+
+  /* Circuitos */
   .circuit-container {
     p {
       padding: 2rem;
@@ -183,6 +191,9 @@
     }
   }
 
+  /*Fim Circuitos */
+
+  /* Equipes */
   .teams-accordion {
     width: 100%;
   }
@@ -210,4 +221,6 @@
     margin-bottom: 2rem;
     font-size: .9rem !important;
   }
+  /*Fim Equipes */
 }
+/*Fim Mobile */
