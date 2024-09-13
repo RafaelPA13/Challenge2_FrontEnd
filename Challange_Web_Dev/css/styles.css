@@ -128,7 +128,8 @@ a:hover {
 /* Fim Títulos */
 
 /* Inputs */
-.input {
+.input,
+.input_2 {
   width: 20%;
   border: 3px solid var(--color-secondary);
   background-color: var(--color-bg);
@@ -145,7 +146,8 @@ a:hover {
     justify-content: center;
   }
 
-  & input {
+  & input,
+  .input_2 {
     width: 100%;
     border: none;
     background-color: var(--color-bg);
