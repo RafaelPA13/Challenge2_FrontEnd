@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ABB Formula E</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Formula E Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <img src="logo-formula-e.png" alt="Logo" class="logo">
-            <form id="loginForm">
+    <div class="login-container">
+      <div class="login-box">
+        <img src="/Challange_Web_Dev/img/Web/Logo-Formula-E.png" alt="Formula E Logo" class="logo">
+        <div class="login-line"></div>
+            <form action="#" method="POST">
                 <div class="input-group">
-                    <input type="text" id="name" name="name" placeholder="Nome" required>
+                    <img src="../img/Icones/User_Icone.png" class="icon" alt="User Icon">
+                    <input type="text" name="nome" placeholder="Nome:" required>
                 </div>
                 <div class="input-group">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <img src="/Challange_Web_Dev/img/Icones/User_Icone.png" class="icon" alt="Email Icon">
+                    <input type="email" name="email" placeholder="Email:" required>
                 </div>
                 <div class="input-group">
-                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                    <img src="../img/Icones/Password_Icone.png" class="icon" alt="Password Icon">
+                    <input type="password" name="senha" placeholder="Senha:" required>
                 </div>
-                <button type="submit">Entrar</button>
+                <button type="submit" class="login-btn">Entrar</button>
             </form>
         </div>
     </div>
-    <script src="login.js"></script>
 </body>
-</html>
