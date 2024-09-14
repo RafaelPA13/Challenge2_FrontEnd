@@ -2,9 +2,9 @@
 
 .container {
   margin: 3rem auto;
+  font-family: var(--font-primary);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  font-family: var(--font-primary);
 }
 
 .content {
@@ -52,34 +52,94 @@
 
 /* Circuitos */
 .circuit-grid {
+  padding: .5rem 3rem;
   margin: 3rem auto;
+}
+
+.grid1, .grid2, .grid3 {
+  gap: 1rem;
+}
+
+.grid1 {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "berlim berlim diriyah"
+    "berlim berlim mexico";
+  margin-bottom: 1rem;
+
+  .berlim {
+    grid-area: berlim;
+  }
+
+  .mexico {
+    grid-area: mexico;
+  }
+
+  .diriyah {
+    grid-area: diriyah;
+  }
+}
+
+.londres {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "misano portland portland"
+    "monaco portland portland";
+  margin-bottom: 1rem;
+
+  .misano {
+    grid-area: misano;
+  }
+  
+  .monaco {
+    grid-area: monaco;
+  }
+
+  .portland {
+    grid-area: portland;
+  }
+}
+
+.mexico, .diriyah, .misano, .monaco{
+  width: 85%;
+}
+
+.mexico, .diriyah {
+  margin-left: 4rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .circuit-container {
-  width: 50%;
-  background-color: var(--font-primary-dark-color);
+  width: 100%;
+  padding: 1rem;
   border-radius: 0 0 55px 0;
+  background: var(--bg-primary);
 
   img {
     width: 100%;
-    padding-left: 1.5rem;
+    border-radius: 10px;
   }
-}
-
-.circuit-name {
-  width: 100%;
-  background-color: #f2f2f2;
-  padding: 1rem;
-  border-radius: 0 0 50px 0;
 
   span {
-    font-weight: 600;
+    color: var(--font-primary-color);
+    font-weight: 300;
     font-size: 2rem;
-    color: var(--font-primary-dark-color);
   }
 }
+
 
 /* Fim Circuitos */
 
