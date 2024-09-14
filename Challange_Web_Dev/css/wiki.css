@@ -99,7 +99,7 @@
   .misano {
     grid-area: misano;
   }
-  
+
   .monaco {
     grid-area: monaco;
   }
@@ -109,7 +109,7 @@
   }
 }
 
-.mexico, .diriyah, .misano, .monaco{
+.mexico, .diriyah, .misano, .monaco {
   width: 85%;
 }
 
@@ -139,7 +139,6 @@
     font-size: 2rem;
   }
 }
-
 
 /* Fim Circuitos */
 
@@ -256,19 +255,47 @@
       font-size: 2rem;
     }
   }
-
+  
   /* Fim História da fórmula E */
 
-
   /* Circuitos */
-  .circuit-container {
-    p {
-      padding: 2rem;
-      color: var(--color-tertiary);
-      font-size: 1rem;
-    }
+  .circuit-grid {
+    padding: .5rem 1rem;
+    margin: 1rem auto;
+    gap: .5rem;
   }
 
+  .grid1 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "berlim"
+      "mexico"
+      "diriyah";
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "misano"
+      "monaco"
+      "portland";
+  }
+
+  .mexico, .diriyah, .misano, .monaco {
+    width:  100%;
+  }
+
+  .mexico, .diriyah {
+    margin-left: 0;
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .circuit-container {
+    padding: .7rem;
+  }
   /*Fim Circuitos */
 
   /* Equipes */
