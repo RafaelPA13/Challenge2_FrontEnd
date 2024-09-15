@@ -52,61 +52,60 @@
 
 /* Circuitos */
 .circuit-grid {
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   margin: 3rem auto;
 }
 
 .grid1, .grid2, .grid3 {
+  display: grid;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .grid1 {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
   grid-template-areas:
     "berlim berlim diriyah"
     "berlim berlim mexico";
-  margin-bottom: 1rem;
+}
 
-  .berlim {
-    grid-area: berlim;
-  }
+.grid1 .berlim {
+  grid-area: berlim;
+}
 
-  .mexico {
-    grid-area: mexico;
-  }
+.grid1 .mexico {
+  grid-area: mexico;
+}
 
-  .diriyah {
-    grid-area: diriyah;
-  }
+.grid1 .diriyah {
+  grid-area: diriyah;
 }
 
 .londres {
-  width: 100%;
   margin-bottom: 1rem;
 }
 
 .grid2 {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
   grid-template-areas:
     "misano portland portland"
     "monaco portland portland";
-  margin-bottom: 1rem;
+}
 
-  .misano {
-    grid-area: misano;
-  }
+.grid2 .misano {
+  grid-area: misano;
+}
 
-  .monaco {
-    grid-area: monaco;
-  }
+.grid2 .monaco {
+  grid-area: monaco;
+}
 
-  .portland {
-    grid-area: portland;
-  }
+.grid2 .portland {
+  grid-area: portland;
+}
+
+.grid3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .mexico, .diriyah, .misano, .monaco {
@@ -114,13 +113,9 @@
 }
 
 .mexico, .diriyah {
-  margin-left: 4rem;
+  margin-left: 15%;
 }
 
-.grid3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
 
 .circuit-container {
   width: 100%;
@@ -139,6 +134,8 @@
     font-size: 2rem;
   }
 }
+
+
 
 /* Fim Circuitos */
 
@@ -169,7 +166,7 @@
     height: 50px;
   }
 }
-  
+
 
 .title-label {
   color: #00001B;
@@ -401,6 +398,7 @@
 .podium-number {
   border-radius: 0 5px 5px 0;
 }
+
 /* Fim Equipes */
 
 
@@ -483,7 +481,14 @@
   /*Fim Circuitos */
 
   /* Equipes */
-  
+  .equipes {
+    display: none;
+  }
+
+  .teams-accordion {
+    display: none;
+  }
+
   /*Fim Equipes */
 }
 
