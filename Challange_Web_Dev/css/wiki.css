@@ -149,66 +149,66 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+}
 
-  .teams-content-box {
-    margin: 1rem 2rem;
+.teams-content-box {
+  margin: 1rem 2rem;
+}
+
+.label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  background-color: #f2f2f2;
+  color: #00001B;
+  cursor: pointer;
+  font-weight: 800;
+
+  img {
+    height: 50px;
   }
+}
+  
 
-  .label {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: .5rem;
-    background-color: #f2f2f2;
-    color: #00001B;
-    cursor: pointer;
-    font-weight: 800;
+.title-label {
+  color: #00001B;
+  margin-left: 24px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
-    img {
-      height: 50px;
-    }
+.label::before {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  order: 2;
+}
 
-    .title-label {
-      color: #00001B;
-      margin-left: 24px;
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
-  }
+.label.active::before {
+  content: "\f077";
+}
 
-  .label::before {
-    content: "\f078";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: auto;
-    order: 2;
-  }
-
-  .label.active::before {
-    content: "\f077";
-  }
-
-  .label-content {
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-primary);
-    color: var(--font-primary-color);
-    overflow: hidden;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    font-weight: 200;
-    transition: .5s ease-out;
-
-    height: 0;
-  }
+.label-content {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  color: var(--font-primary-color);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  transition: .5s ease-out;
+  height: 0;
+}
 
 
-  .label.active+.label-content {
-    height: auto;
-    padding: 1.5rem;
-  }
+.label.active+.label-content {
+  height: auto;
+  padding: 1.5rem;
 }
 
 .grid-label-content {
@@ -227,11 +227,11 @@
   }
 }
 
+
 .pilots-cards {
   grid-area: pilot;
   display: flex;
   flex-direction: column;
-
 }
 
 .bar-color {
@@ -244,6 +244,45 @@
   background-color: var(--cor-abt);
 }
 
+#andretti {
+  background-color: var(--cor-andretti);
+}
+
+#ds {
+  background-color: var(--cor-ds-penske);
+}
+
+#env {
+  background-color: var(--cor-envision);
+}
+
+#ert {
+  background-color: var(--cor-ert);
+}
+
+#jaguar {
+  background-color: var(--cor-jaguar);
+}
+
+#mah {
+  background-color: var(--cor-mahindra);
+}
+
+#mas {
+  background-color: var(--cor-maseratti);
+}
+
+#mcl {
+  background-color: var(--cor-mclaren);
+}
+
+#nissan {
+  background-color: var(--cor-nissan);
+}
+
+#porsche {
+  background-color: var(--cor-porsche);
+}
 
 .pilot1, .pilot2 {
   display: flex;
@@ -307,6 +346,46 @@
   color: var(--cor-abt);
 }
 
+#icon-andretti {
+  color: var(--cor-andretti);
+}
+
+#icon-ds {
+  color: var(--cor-ds-penske);
+}
+
+#icon-env {
+  color: var(--cor-envision);
+}
+
+#icon-ert {
+  color: var(--cor-ert);
+}
+
+#icon-jaguar {
+  color: var(--cor-jaguar);
+}
+
+#icon-mah {
+  color: var(--cor-mahindra);
+}
+
+#icon-mas {
+  color: var(--cor-maseratti);
+}
+
+#icon-mcl {
+  color: var(--cor-mclaren);
+}
+
+#icon-nissan {
+  color: var(--cor-nissan);
+}
+
+#icon-porsche {
+  color: var(--cor-porsche);
+}
+
 .position-number, .victory-number, .podium-number {
   background-color: #f2f2f2;
   padding: 1rem;
@@ -322,8 +401,6 @@
 .podium-number {
   border-radius: 0 5px 5px 0;
 }
-
-
 /* Fim Equipes */
 
 
@@ -406,34 +483,7 @@
   /*Fim Circuitos */
 
   /* Equipes */
-  .teams-accordion {
-    width: 100%;
-  }
-
-  .label {
-    gap: 10px !important;
-    padding: 1rem !important;
-
-    img {
-      height: 30px !important;
-    }
-
-    .title-label {
-      font-size: .8rem !important;
-    }
-  }
-
-  .label::before {
-    font-weight: 200;
-    right: 1px;
-    font-size: 1rem;
-  }
-
-  .label-content {
-    margin-bottom: 2rem;
-    font-size: .9rem !important;
-  }
-
+  
   /*Fim Equipes */
 }
 
