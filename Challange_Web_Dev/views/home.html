@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,89 +23,34 @@
   <body>
     <div class="container">
       <div class="bg">
-        <header class="header-page">
-          <div class="logo-home">
-            <img src="../img/Web/Logo-Formula-E.png" alt="Logo" />
-          </div>
-          <nav>
-            <ul>
-              <li><a href="./wiki.html">Wiki</a></li>
-              <li><a href="./classificacao.html">Classificação</a></li>
-              <li><a href="./jogo.html">Jogos</a></li>
-            </ul>
-          </nav>
-        </header>
-
-        <section class="hero">
-          <h2>Bem vindo a Fórmula E</h2>
-          <a href="./login.html" class="button button-dark">ENTRAR</a>
-          <a href="#scroll-target">
-            <img src="../img/setas.png" alt="Seta para baixo" />
-          </a>
+        <section class="section-boas-vindas">
+          <h1>Bem vindo a Fórmula E</h1>
+          <a href="./login.html" class="button button-dark">Entrar</a>
+          <i class="fa-solid fa-angles-down"></i>
         </section>
-      </div>
 
-      <div class="section-container mb-1" id="scroll-target">
-        <div class="content-wrapper">
-          <div class="content">
-            <div class="title-container">
+        <section class="section-a-nova-era-do-automobilismo">
+          <div class="card">
+            <img src="../img/Web/Imagem-Home-1.jpeg" alt="Carro da equipe da porshe">
+            <div class="conteudo">
               <h2>A Nova Era do Automobilismo</h2>
+              <p>Conheça mais sobre a corrida mais sustentável do mundo e  o futuro dos esporte automotivo.</p>
+              <a href="./wiki.html" class="button button-dark">Saiba Mais</a>
             </div>
-            <div class="text-container">
-              <p>
-                A Fórmula E, inaugurada em 2014, é a primeira competição mundial
-                para carros monopostos totalmente elétricos. Com o avanço da
-                tecnologia, os carros agora competem por 45 minutos com uma
-                única carga de bateria. Celebrando seu décimo aniversário, a
-                Fórmula E continua a promover a inovação e a sustentabilidade no
-                automobilismo.
-              </p>
-            </div>
+          </div>
+        </section>
+        
+        <section class="section-classificacao">
+          <h1 class="titulos">Circuito de Berlim</h1>
+          <ul class="lista-pilotos"></ul>
+          <a href="./classificacao.html" class="button button-red">Veja Mais</a>
+        </section>
 
-            <div>
-              <a href="./wiki.html" class="link button button-light">Saiba mais</a>
-            </div>
-          </div>
-          <div class="image-container">
-            <img
-              class="main-image"
-              src="../img/Web/Imagem-Home-1.png"
-              alt="Formula E Carro"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="section-container mb-1" id="section-circuito">
-        <div class="content-wrapper">
-          <div class="content">
-            <div class="title-container mb-1">
-              <h2>Circuito de Berlim</h2>
-            </div>
-            <div class="circuito-content" id="circuito-lista"></div>
-          </div>
-          <div class="image-container">
-            <img
-              class="main-image"
-              src="../img/Pilotos/Antonio-Felix-Da-Costa.png"
-              alt="Piloto"
-            />
-            <div class="piloto-wrapper" id="primeira-posicao"></div>
-          </div>
-        </div>
-      </div>
-
-      <section class="hero section-acompanhar-corridas">
-        <div class="content-corridas">
-          <h2>Acompanhe as corridas e divirta-se!</h2>
-          <p>
-            Teste seus conhecimentos sobre as corridas e adivinhe certos
-            detalhes das corridas e ganhe pontos, que vença o melhor!
-          </p>
+        <section class="section-jogo">
+          <h1>Acompanhe as corridas e divirta-se</h1>
+          <p>Teste seus conheicmentos sobre as corridas e adivinhe certos detalhes das corridas e ganhe pontos, que vença o melhor!</p>
           <a href="./jogo.html" class="button button-dark">Jogar</a>
-        </div>
-      </section>
-    </div>
+        </section>
 
     <footer>
       <div class="footer-container">

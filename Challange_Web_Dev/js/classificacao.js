@@ -3,7 +3,6 @@ const classificacoes = PILOTOS.map((piloto, index) => ({
   piloto: piloto,
   largada: index + 1,
   melhorTempo: `1:${Math.floor(Math.random() * 60)}:0${index}`,
-  diferenca: `00:00:${index * 10}`,
   pontos: (PILOTOS.length - index) * 2,
 }));
 
@@ -33,7 +32,7 @@ function buscarPiloto(corredor) {
 //Imprime os pilotos na tela
 function mostrarPilotos(corredor) {
   //Apaga a tabela
-  const tabelaPilotos = document.getElementById('pilotos');
+  const tabelaPilotos = document.getElementById('classificacao-pilotos');
   tabelaPilotos.innerHTML = '';
 
   const dados = buscarPiloto(corredor);
@@ -48,26 +47,36 @@ function mostrarPilotos(corredor) {
 
 //Mapeia a lista que for retornada
 function mapeamento(lista) {
-  //Elemento selecionado
-  const tabelaPilotos = document.getElementById('pilotos');
+  const calssificacaoPilotos = document.getElementById('classificacao-pilotos')
 
-  //Mapeamento de todos os elementos da lista
   lista.forEach((classificacao) => {
-    //Elementos criados
-    const tr = document.createElement('tr');
-    //Estrutura da tag
-    tr.innerHTML = `
-                <td class="posicao">${classificacao.posicao}</td>
-                <td class="piloto bordas-equipes ${classificacao.piloto.equipe.nome}">
-                    <img class="foto-piloto" src=${classificacao.piloto.foto} alt=${classificacao.piloto.nome}>
-                    <h2>${classificacao.piloto.nome}</h2>
-                    <img class="foto-equipe" src="${classificacao.piloto.equipe.logo}" alt="${classificacao.piloto.equipe.nome}">
-                </td>
-                <td class="largada">${classificacao.largada}</td>
-                <td class="melhor-tempo">${classificacao.melhorTempo}</td>
-                <td class="diferenca">${classificacao.diferenca}</td>
-                <td class="pontos">${classificacao.pontos}</td>
-                `;
-    tabelaPilotos.appendChild(tr);
-  });
+    const cardPiloto = document.createElement('li')
+    cardPiloto.classList.add('card-piloto')
+ 
+    cardPiloto.innerHTML = `
+    <div class="piloto-equipe">
+      <img src="${classificacao.piloto.foto}" alt="${classificacao.piloto.nome}">
+      <h3 class="equipe bg-${classificacao.piloto.equipe.nome}">${classificacao.piloto.equipe.nome}</h3>
+    </div>
+    <div class="classificacao">
+      <h1>${classificacao.posicao}</h1>
+      <h2>${classificacao.piloto.nome}</h2>
+    </div>
+    <ul class="estatisticas">
+      <li>
+        <h3>${classificacao.pontos}</h3>
+        <h3>Pontos</h3>
+      </li>
+      <li>
+        <h3>${classificacao.melhorTempo}</h3>
+        <h3>Melhor Tempo</h3>
+      </li>
+      <li>
+        <h3>${classificacao.largada}</h3>
+        <h3>Largada</h3>
+      </li>
+    </ul>
+    `;
+    calssificacaoPilotos.appendChild(cardPiloto)
+  })
 }
