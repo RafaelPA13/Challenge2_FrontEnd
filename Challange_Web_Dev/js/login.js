@@ -1,16 +1,10 @@
-document
-  .getElementById('loginForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+document.querySelector('form').addEventListener('submit', function(e) {
+  const nome = document.querySelector('input[name="nome"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const senha = document.querySelector('input[name="senha"]').value;
 
-    var email = document.getElementById('email').value.trim();
-    var password = document.getElementById('password').value.trim();
-
-    if (email === '' || password === '') {
+  if (!nome || !email || !senha) {
       alert('Por favor, preencha todos os campos.');
-      return;
-    }
-
-    // Se a validação for bem-sucedida, redirecione para a página home
-    window.location.href = 'home.html';
-  });
+      e.preventDefault(); // Prevent form submission
+  }
+});
