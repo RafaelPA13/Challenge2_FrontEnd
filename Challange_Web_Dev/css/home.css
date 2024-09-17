@@ -20,7 +20,7 @@
 }
 
 .section-boas-vindas h1,
-i {
+#seta {
   text-align: center;
   font-size: 48px;
   color: var(--font-primary-color);
