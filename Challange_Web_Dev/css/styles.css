@@ -1,14 +1,14 @@
 /* Define as variáveis de cores e fonte */
 :root {
   --font-primary: 'Montserrat', sans-serif;
-  --font-primary-color: #fafdea;
+  --font-primary-color: #F2F2F2;
   --font-primary-dark-color: #00005a;
   --color-primary: #00001b;
-  --color-bg: #fafdea;
+  --color-bg: #F2F2F2;
   --color-secondary: #0500ff;
   --color-tertiary: #00005a;
   --color-quaternary: #FF000F;
-  --footer-header-bg: #00001b;
+  --footer-bg: #00001b;
   --title-color: #00ffff;
   --bg-primary: linear-gradient(90deg, #00005a 0%, #0000c0 100%);
   /* Cores de equipes */
@@ -63,7 +63,7 @@ a:hover {
 
 /* Header */
 .header {
-  background-color: var(--footer-header-bg);
+  background-color: var(--footer-bg);
   padding: 32px;
   display: flex;
   align-items: center;
@@ -154,6 +154,72 @@ a:hover {
 
 /* Fim Inputs*/
 
+/* Cards de Pilotos */
+.card-piloto {
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.piloto-equipe {
+  width: 100%;
+  text-align: center;
+}
+
+.piloto-equipe img {
+  width: 200px;
+  height: 200px;
+}
+
+.equipe {
+  color: var(--font-primary-color);
+}
+
+.classificacao {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.classificacao h1 {
+  font-size: 52px;
+  color: var(--font-primary-dark-color);
+}
+
+.classificacao h2 {
+  color: var(--font-primary-dark-color);
+}
+
+.estatisticas {
+  padding: 0 14px;
+  display: flex;
+  gap: 12px;
+}
+
+.estatisticas li {
+  background: var(--bg-primary);
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.estatisticas li h3 {
+  font-size: 14px;
+  color: var(--font-primary-color);
+}
+
+/* Fim Cards de Pilotos */
+
 /* BUTTON */
 .button {
   border-radius: 50px;
@@ -224,7 +290,7 @@ a:hover {
 /* FOOTER */
 
 footer {
-  background-color: var(--footer-header-bg);
+  background-color: var(--footer-bg);
   color: var(--font-primary-color);
   text-align: center;
   padding: 1em 0;
@@ -318,7 +384,7 @@ footer {
     width: 100%;
     top: 70px;
     right: 0px;
-    background-color: var(--footer-header-bg);
+    background-color: var(--footer-bg);
     transition: .6s;
     z-index: 1000;
     height: 0px;

@@ -1,78 +1,85 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #00268d, #00aaff);
+}
+
+body {
+  background: url(../img/Web/E-gigante.png) no-repeat,
+  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,4,73,1) 6%, rgba(6,5,85,1) 10%, rgba(8,8,114,1) 16%, rgba(9,9,121,1) 22%, rgba(8,28,133,1) 50%, rgba(6,63,156,1) 69%, rgba(6,63,156,1) 80%, rgba(6,63,156,1) 88%, rgba(6,63,156,1) 95%);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
+  margin: 0; 
 }
 
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/Web/E-gigante.png) no-repeat center center/cover;
-  z-index: -1;
-}
-
-.container {
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 1;
 }
 
 .login-box {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 300px;
 }
 
 .logo {
   width: 100%;
-  margin-bottom: 20px;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.login-line {
+  width: 100%;
+  height: .2rem;
+  margin-bottom: .5rem;
+  background-color: #0000C0;
 }
 
 .input-group {
-  margin-bottom: 15px;
-  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #0000C0;
+  padding: .05rem;
+  gap: .5rem;
 }
 
-.input-group label {
-  display: block;
-  margin-bottom: 5px;
+.icon {
+  width: 3rem;
+  padding: .5rem;
 }
 
-.input-group input {
-  width: 90%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  font-size: 1rem;
+  color: #0000C0; 
+  padding-left: 1rem;
+  border: 2px solid #0000C0;
+  border-radius: 0px;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
-button {
+.login-btn {
   width: 100%;
   padding: 10px;
-  background: #0055aa;
+  background-color: #0000C0;
+  color: #fff;
   border: none;
-  color: white;
-  border-radius: 5px;
+  border-radius: 50px;
+  cursor: pointer;  
   font-size: 16px;
-  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background: #003377;
+.login-btn:hover {
+  background-color: #1e1ec4;
 }

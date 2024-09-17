@@ -11,58 +11,41 @@ const pilotosCircuitos = [
     posicao: 3,
     piloto: PILOTOS[2],
   },
-  {
-    posicao: 4,
-    piloto: PILOTOS[3],
-  },
 ];
 
-window.addEventListener('DOMContentLoaded', carregarCircuitos);
+window.addEventListener("DOMContentLoaded", carregarCircuitos);
 
 function carregarCircuitos() {
-  const circuitos = document.getElementById('circuito-lista');
-  circuitos.innerHTML = '';
+  const listaPilotos = document.querySelector(".lista-pilotos");
 
-  const primeiraPosicaoContainer = document.getElementById('primeira-posicao');
-  primeiraPosicaoContainer.innerHTML = '';
+  pilotosCircuitos.forEach((pilotoCircuito) => {
+    const cardPiloto = document.createElement("li");
+    cardPiloto.classList.add("card-piloto");
 
-  pilotosCircuitos.forEach((pilotoCircuito, i) => {
-    const card = document.createElement('div');
-    card.classList.add('piloto-card');
-    card.classList.add('mb-1');
-
-    card.innerHTML = `
-            <div class="cor-equipe bg-${
-              pilotoCircuito.piloto.equipe.nome
-            }"></div>
-            <div class="posicao flex-center"><p>${
-              pilotoCircuito.posicao
-            }</p></div>
-            ${
-              i > 0
-                ? `<div class="piloto-foto">
-                <img
-                src="${pilotoCircuito.piloto.foto}"
-                alt="${pilotoCircuito.piloto.nome}"
-                />
-            </div>`
-                : null
-            }
-            <div class="piloto-nome flex-center">
-                <p>${pilotoCircuito.piloto.nome}</p>
-            </div>
-            <div class="piloto-equipe flex-center">
-                <img
-                src="${pilotoCircuito.piloto.equipe.logo}"
-                alt="${pilotoCircuito.piloto.equipe.nome}"
-                />
-            </div>
-        `;
-
-    if (i === 0) {
-      primeiraPosicaoContainer.appendChild(card);
-    } else {
-      circuitos.appendChild(card);
-    }
+    cardPiloto.innerHTML = `
+    <div class="piloto-equipe">
+      <img src="${pilotoCircuito.piloto.foto}" alt="${pilotoCircuito.piloto.nome}">
+      <h3 class="equipe bg-${pilotoCircuito.piloto.equipe.nome}">${pilotoCircuito.piloto.equipe.nome}</h3>
+    </div>
+    <div class="classificacao">
+      <h1>${pilotoCircuito.posicao}</h1>
+      <h2>${pilotoCircuito.piloto.nome}</h2>
+    </div>
+    <ul class="estatisticas">
+      <li>
+        <h3>25</h3>
+        <h3>Pontos</h3>
+      </li>
+      <li>
+        <h3>1:04:045</h3>
+        <h3>Melhor Tempo</h3>
+      </li>
+      <li>
+        <h3>10</h3>
+        <h3>Largada</h3>
+      </li>
+    </ul>
+    `;
+    listaPilotos.appendChild(cardPiloto)
   });
 }
