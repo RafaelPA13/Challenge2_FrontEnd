@@ -78,8 +78,8 @@ i {
 }
 
 .card img {
-  width: 90%;
-  justify-self: flex-end;
+  width: 100%;
+  height: 100%;
 }
 
 .conteudo {
@@ -141,6 +141,19 @@ i {
 }
 
 /* Fim Jogo */
+
+/* tablet */
+@media (width < 950px) {
+  .section-a-nova-era-do-automobilismo {
+    width: 90%;
+  }
+
+  .lista-pilotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Fim tablet */
 
 /* mobile */
 @media (width < 650px) {
