@@ -4,44 +4,6 @@
   list-style: none;
 }
 
-
-.header-page {
-  width: 100%;
-  height: 100px;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: start;
-
-  img {
-    width: 300px;
-    margin-bottom: 15px;
-  }
-
-  @media only screen and (max-width: 500px) {
-    img {
-      display: none;
-    }
-  }
-}
-
-.header-page ul,
-li {
-  display: flex;
-  gap: 30px;
-
-  && :hover {
-    color: var(--color-secondary);
-  }
-}
-
 /* Boas Vindas */
 .section-boas-vindas {
   height: 100vh;
@@ -58,7 +20,7 @@ li {
 }
 
 .section-boas-vindas h1,
-i {
+#seta {
   text-align: center;
   font-size: 48px;
   color: var(--font-primary-color);
