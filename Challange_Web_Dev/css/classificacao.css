@@ -4,6 +4,18 @@
   object-fit: fill;
 }
 
+/* Section Header */
+.section-header {
+  width: 100%;
+  height: 100px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Fim Section Header */
+
 /* Fim Imagem do Circuito */
 
 .content {
@@ -154,7 +166,7 @@ tbody {
 /* Fim  Tabela */
 
 
-/* Mobile */ 
+/* Mobile */
 @media only screen and (max-width: 950px) {
   .section-header {
     flex-direction: column;
@@ -163,6 +175,6 @@ tbody {
   .input {
     width: 100%;
   }
-  
-  
+
+
 }

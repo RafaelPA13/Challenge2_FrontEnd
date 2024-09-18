@@ -25,8 +25,25 @@
   </head>
   <body>
     <header class="header">
-      <a href="./home.html"><i class="fa-solid fa-angles-left"></i> Voltar</a>
-      <img src="../img/Web/Logo-Formula-E.png" alt="logo" />
+      <a href="./home.html"
+        ><img class="logo" src="../img/Web/Logo-Formula-E.png" alt="logo"
+      /></a>
+      <nav id="nav">
+        <button id="btn-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="menu-header">
+          <li><a href="./wiki.html" class="header-link">Wiki</a></li>
+          <li>
+            <a href="./classificacao.html" class="header-link">Classificação</a>
+          </li>
+          <li><a href="./jogo.html" class="header-link">Jogos</a></li>
+          <li class="buttons">
+            <a href="./login.html" class="button button-red">Entrar</a>
+            <a class="button button-dark">Cadastrar</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="titulos">
@@ -38,7 +55,7 @@
         alt="Circuito"
       />
       <div class="content">
-        <div class="header section-header">
+        <div class="section-header">
           <h1>Classificação</h1>
           <div class="input">
             <div class="icone">
@@ -51,19 +68,7 @@
             />
           </div>
         </div>
-        <table class="tabela-pilotos">
-          <thead>
-            <tr>
-              <th class="posicao">Posição</th>
-              <th class="piloto">Piloto</th>
-              <th class="largada">Largada</th>
-              <th class="melhor-tempo">Melhor Tempo</th>
-              <th class="diferenca">Diferença</th>
-              <th class="pontos">Pontos</th>
-            </tr>
-          </thead>
-          <tbody id="pilotos"></tbody>
-        </table>
+        <ul id="classificacao-pilotos"></ul>
       </div>
     </main>
     <footer>
@@ -104,6 +109,7 @@
       </div>
     </footer>
     <!-- Importe de JS -->
+    <script src="../js/global.js"></script>
     <script src="../js/constantes.js"></script>
     <script src="../js/classificacao.js" defer></script>
   </body>
