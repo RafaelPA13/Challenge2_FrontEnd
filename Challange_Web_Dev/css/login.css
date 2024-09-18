@@ -6,8 +6,7 @@
 }
 
 body {
-  background: url(../img/Web/E-gigante.png) no-repeat,
-  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,4,73,1) 6%, rgba(6,5,85,1) 10%, rgba(8,8,114,1) 16%, rgba(9,9,121,1) 22%, rgba(8,28,133,1) 50%, rgba(6,63,156,1) 69%, rgba(6,63,156,1) 80%, rgba(6,63,156,1) 88%, rgba(6,63,156,1) 95%);
+  background: var(--bg-primary);
   background-size: cover;
   background-position: center;
   display: flex;
