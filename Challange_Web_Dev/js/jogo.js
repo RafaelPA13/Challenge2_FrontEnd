@@ -4,6 +4,6 @@ function apostas() {
         alert('Preencha os campo corretamente')
     }
     else {
-        alert('Sua apostas foram enviadas, BOA SORTE!')
+        alert('Suas apostas foram enviadas, BOA SORTE!')
     }
 }
