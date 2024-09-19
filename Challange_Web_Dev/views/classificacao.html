@@ -1,116 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formula E</title>
-    <!-- Importe de CSS -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/classificacao.css" />
-    <!-- Importe de Fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Importe de icones -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="./home.html"
-        ><img class="logo" src="../img/Web/Logo-Formula-E.png" alt="logo"
-      /></a>
-      <nav id="nav">
-        <button id="btn-mobile">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul class="menu-header">
-          <li><a href="./wiki.html" class="header-link">Wiki</a></li>
-          <li>
-            <a href="./classificacao.html" class="header-link">Classificação</a>
-          </li>
-          <li><a href="./jogo.html" class="header-link">Jogos</a></li>
-          <li class="buttons">
-            <a href="./login.html" class="button button-red">Entrar</a>
-            <a class="button button-dark">Cadastrar</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="titulos">
-        <h1>Circuito: Berlim</h1>
-      </div>
-      <img
-        class="circuito"
-        src="../img/Circuitos/Circuito-Berlim.webp"
-        alt="Circuito"
-      />
-      <div class="content">
-        <div class="section-header">
-          <h1>Classificação</h1>
-          <div class="input">
-            <div class="icone">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <input
-              type="text"
-              id="barra-pesquisa"
-              placeholder="Buscar Piloto:"
-            />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formula E</title>
+  <!-- Importe de CSS -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/classificacao.css" />
+  <!-- Importe de Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Importe de icones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="./home.html"><img class="logo" src="../img/Web/Logo-Formula-E.png" alt="logo" /></a>
+    <nav id="nav">
+      <button id="btn-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="menu-header">
+        <li><a href="./wiki.html" class="header-link">Wiki</a></li>
+        <li>
+          <a href="./classificacao.html" class="header-link">Classificação</a>
+        </li>
+        <li><a href="./jogo.html" class="header-link">Jogos</a></li>
+        <li class="buttons">
+          <a href="./login.html" class="button button-red">Entrar</a>
+          <a class="button button-dark">Cadastrar</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="titulos">
+      <h1>Circuito: Berlim</h1>
+    </div>
+    <img class="circuito" src="../img/Circuitos/Circuito-Berlim.webp" alt="Circuito" />
+    <div class="content">
+      <div class="section-header">
+        <h1>Classificação</h1>
+        <div class="input">
+          <div class="icone">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
+          <input type="text" id="barra-pesquisa" placeholder="Buscar Piloto:" />
         </div>
-        <ul id="classificacao-pilotos"></ul>
       </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="menu">
-            <div class="logo-footer">
-              <img src="../img/Web/Logo-Formula-E.png" alt="Logo" />
-            </div>
-            <ul class="no-decoration-list">
-              <li></li>
-              <li>
-                <p>Faça parte da comunidade da Fórmula E</p>
-              </li>
-            </ul>
+      <ul id="classificacao-pilotos"></ul>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="menu">
+          <div class="logo-footer">
+            <img src="../img/Web/Logo-Formula-E.png" alt="Logo" />
           </div>
           <ul class="no-decoration-list">
-            <li><h2>Páginas</h2></li>
+            <li></li>
             <li>
-              <a href="./home.html">Home</a>
+              <p>Faça parte da comunidade da Fórmula E</p>
             </li>
-            <li><a href="./wiki.html">Wiki</a></li>
-            <li><a href="./classificacao.html">Classificação</a></li>
-            <li><a href="./jogo.html">Jogo</a></li>
           </ul>
         </div>
-        <div class="copyright-container">
-          <div class="divider"></div>
-          <div class="footer-bottom">
-            <span>Formula E © 2024</span>
-            <a
-              href="https://github.com/RafaelPA13/Challange_Web_Dev"
-              target="_blank"
-              >Código Fonte</a
-            >
-          </div>
+        <ul class="no-decoration-list">
+          <li>
+            <h2>Páginas</h2>
+          </li>
+          <li>
+            <a href="./home.html">Home</a>
+          </li>
+          <li><a href="./wiki.html">Wiki</a></li>
+          <li><a href="./classificacao.html">Classificação</a></li>
+          <li><a href="./jogo.html">Jogo</a></li>
+        </ul>
+      </div>
+      <div class="copyright-container">
+        <div class="divider"></div>
+        <div class="footer-bottom">
+          <span>Formula E © 2024</span>
+          <a href="https://github.com/RafaelPA13/Challenge2_FrontEnd" target="_blank">Código Fonte</a>
         </div>
       </div>
-    </footer>
-    <!-- Importe de JS -->
-    <script src="../js/global.js"></script>
-    <script src="../js/constantes.js"></script>
-    <script src="../js/classificacao.js" defer></script>
-  </body>
+    </div>
+  </footer>
+  <!-- Importe de JS -->
+  <script src="../js/global.js"></script>
+  <script src="../js/constantes.js"></script>
+  <script src="../js/classificacao.js" defer></script>
+</body>
+
 </html>
