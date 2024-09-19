@@ -52,7 +52,7 @@ function mapeamento(lista) {
   lista.forEach((classificacao) => {
     const cardPiloto = document.createElement('li')
     cardPiloto.classList.add('card-piloto')
- 
+
     cardPiloto.innerHTML = `
     <div class="piloto-equipe">
       <img src="${classificacao.piloto.foto}" alt="${classificacao.piloto.nome}">
