@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(../img/Web/E-gigante.png) no-repeat, var(--bg-primary);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.login-line {
+    width: 100%;
+    height: .2rem;
+    margin-bottom: .5rem;
+    background-color: #0000C0;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #0000C0;
+    padding: .05rem;
+    gap: .5rem;
+}
+
+.icon {
+    width: 3rem;
+    padding: .5rem;
+}
+
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    font-size: 1rem;
+    color: #0000C0;
+    padding-left: 1rem;
+    border: 2px solid #0000C0;
+    border-radius: 0px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0000C0;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1e1ec4;
+}

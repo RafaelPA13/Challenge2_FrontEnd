@@ -1,10 +1,15 @@
-document.querySelector('form').addEventListener('submit', function (e) {
-  const nome = document.querySelector('input[name="nome"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const senha = document.querySelector('input[name="senha"]').value;
+function logar() {
+  let email = document.getElementById('email').value;
+  let senha = document.getElementById('senha').value;
 
-  if (!nome || !email || !senha) {
-    alert('Por favor, preencha todos os campos.');
-    e.preventDefault(); // Prevent form submission
-  }
-});
+  let user = USERS
+
+  user.map ((user) => {
+    if (user.email == email && user.senha == senha) {
+      window.location.href = '../views/home.html';
+      alert('Login efetuado com sucesso');
+    } else {
+      alert('Email ou senha incorretos');
+    }
+  });
+}
