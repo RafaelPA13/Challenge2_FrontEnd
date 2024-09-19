@@ -12,26 +12,23 @@
 <body>
     <div class="login-container">
         <div class="login-box">
-            <img src="/Challange_Web_Dev/img/Web/Logo-Formula-E.png" alt="Formula E Logo" class="logo">
+            <img src="../img/Web/Logo-Formula-E.png" alt="Formula E Logo" class="logo">
             <div class="login-line"></div>
-            <form id="loginForm">
+            <form>
                 <div class="input-group">
-                    <img src="../img/Icones/User_Icone.png" class="icon" alt="User Icon">
-                    <input type="text" name="nome" placeholder="Nome:" required>
-                </div>
-                <div class="input-group">
-                    <img src="/Challange_Web_Dev/img/Icones/User_Icone.png" class="icon" alt="Email Icon">
-                    <input type="email" name="email" placeholder="Email:" required>
+                    <img src="../img/Icones/User_Icone.png" class="icon" alt="Email Icon">
+                    <input id="email" type="email" name="email" placeholder="Email:" required>
                 </div>
                 <div class="input-group">
                     <img src="../img/Icones/Password_Icone.png" class="icon" alt="Password Icon">
-                    <input type="password" name="senha" placeholder="Senha:" required>
+                    <input id="senha" type="password" name="senha" placeholder="Senha:" required>
                 </div>
-                <button type="submit" class="login-btn">Entrar</button>
+                <button type="submit" class="login-btn" onclick="logar()">Entrar</button>
             </form>
         </div>
     </div>
 
+    <script src="../js/constantes.js"></script>
     <script src="../js/login.js"></script>
 
 </body>

@@ -152,3 +152,11 @@ const PILOTOS = [
     foto: '../img/Pilotos/Maximilian-Gunther.png',
   },
 ];
+
+const USERS = [
+  {
+    nome: 'admin',
+    email: 'admin@123',
+    senha: 'admin',
+  },
+];
