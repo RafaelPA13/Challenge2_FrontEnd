@@ -29,7 +29,7 @@
 h1,
 h2,
 h3 {
-  color: var(--title-color);
+  color: var(--color-tertiary);
 }
 
 /* Reset básico */
@@ -260,35 +260,10 @@ a:hover {
 
 /* FIM BUTTON */
 
-/* HELPERS */
-.text-center {
-  text-align: center;
-}
-
-.mb-1 {
-  margin-bottom: 1em;
-}
-
-.mb-2 {
-  margin-bottom: 2em;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* FIM HELPERS */
-
 .no-decoration-list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.background-primary {
-  background: var(--bg-primary);
 }
 
 /* FOOTER */
@@ -328,6 +303,7 @@ footer a:hover {
 footer {
   h2 {
     margin-bottom: 5px;
+    color: var(--title-color);
   }
 
   li {
