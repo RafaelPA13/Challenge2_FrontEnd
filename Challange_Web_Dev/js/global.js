@@ -1,6 +1,6 @@
 const btnMobile = document.getElementById('btn-mobile')
 
-function alternarMenu(){
+function alternarMenu() {
     const nav = document.getElementById('nav')
     nav.classList.toggle('aberto')
 }
