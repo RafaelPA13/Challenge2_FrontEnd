@@ -222,9 +222,9 @@
   h3 {
     font-style: italic;
     font-size: 2.5rem;
+    color: var(--font-primary-color);
   }
 }
-
 
 .pilots-cards {
   grid-area: pilot;
@@ -482,12 +482,114 @@
   /*Fim Circuitos */
 
   /* Equipes */
-  .equipes {
-    display: none;
+  .teams-accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .teams-accordion {
-    display: none;
+  .teams-content-box {
+    margin: 0 0;
+    width: 100%;
+  }
+
+  .label {
+    width: 100%;
+
+    img {
+      height: 30px;
+    }
+  }
+
+  .title-label {
+    font-size: 1.2rem;
+  }
+
+  .label-content {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+
+  .label.active+.label-content {
+    height: auto;
+    padding: .5rem;
+  }
+
+  .grid-label-content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pilot"
+      "carro"
+      "stats";
+    margin-bottom: 1rem;
+    gap: 0;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .pilots-cards, .car-card, .stats-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .bar-color {
+    width: 1rem;
+  }
+
+  .pilot1, .pilot2 {
+    gap: 1rem;
+    width: 100%;
+
+    h1 {
+      font-size: 0;
+      font-size: 2rem;
+    }
+  }
+
+  .car-card {
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .stats-card {
+    grid-area: stats;
+    gap: 0;
+  }
+
+  .data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 1rem;
+  }
+
+  .my-icon {
+    font-size: 1rem;
+  }
+
+
+  .position-number {
+    border-radius: 0 0 0 0;
+  }
+
+  .podium-number {
+    border-radius: 0 0 0 0;
+  }
+
+  .position-number, .victory-number, .podium-number {
+    width: 100%;
+    padding: .7rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
   }
 
   /*Fim Equipes */
