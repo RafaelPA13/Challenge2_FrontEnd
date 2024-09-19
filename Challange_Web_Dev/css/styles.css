@@ -125,8 +125,7 @@ a:hover {
 /* Fim Títulos */
 
 /* Inputs */
-.input,
-.input_2 {
+.input {
   width: 20%;
   border: 3px solid var(--color-secondary);
   background-color: var(--color-bg);
@@ -137,14 +136,16 @@ a:hover {
   & .icone {
     padding: 10px;
     background-color: var(--color-secondary);
-    color: var(--color-bg);
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & h3, i {
+      color: var(--color-bg);
+    }
   }
 
-  & input,
-  .input_2 {
+  & input {
     width: 100%;
     border: none;
     background-color: var(--color-bg);
